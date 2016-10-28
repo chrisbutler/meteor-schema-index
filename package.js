@@ -1,7 +1,7 @@
 Package.describe({
   name: "aldeed:schema-index",
   summary: "Control some MongoDB indexing with schema options",
-  version: "1.1.0",
+  version: "1.2.0",
   git: "https://github.com/aldeed/meteor-schema-index.git"
 });
 
@@ -11,6 +11,7 @@ Package.onUse(function(api) {
     'underscore@1.0.0',
     'minimongo@1.0.0',
     'check@1.0.0',
+    'ecmascript'
   ]);
 
   api.addFiles([
@@ -26,6 +27,7 @@ Package.onTest(function(api) {
     'random@1.0.0',
     'mongo@1.0.0',
     'aldeed:simple-schema',
+    'ecmascript'
   ]);
 
   api.addFiles([
